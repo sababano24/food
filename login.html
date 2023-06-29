@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LogIn</title>
+    <script src="login.js"></script>
+    <style>
+        .div1 {
+            width: 300px;
+            height: 350px;
+            background-color: red;
+            border: 5px solid;
+            margin: 100px auto 0px auto;
+            padding: 10px;
+        }
+        /* .div1:hover{
+            cursor: pointer;
+            top: 10%;
+            width: 310px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border: solid black 1px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        } */
+
+        label {
+            margin: 5px;
+            padding: 5px;
+            width: 250px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            width: 250px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 5px;
+            width: 263px;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('img3.jpg');">
+    <div class="div1" >
+        <form method="post" id="form" onsubmit="()=>{return false}">
+        <label>User Name</label>
+        <input type="text" name="username" id="name" autofocus>
+        <br>
+
+        <label>Email</label>
+        <input type="email" name="email" autofocus>
+        <br>
+
+        <label>Password</label>
+        <input type="password" name="password" autofocus>
+        <br>
+        <button type="submit">LogIn</button>
+        <button onclick="ccc(form)">ccc</button>
+    </form>
+ 
+    </div>
+</body>
+
+</html>
